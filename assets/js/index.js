@@ -3,7 +3,7 @@ function randomNumbers(min, max) {
 }
 
 let arr = [
-  randomNumbers(50, 100),
+  randomNumbers(1, 100),
   randomNumbers(1, 100),
   randomNumbers(1, 100),
   randomNumbers(1, 100),
@@ -24,8 +24,6 @@ for (let i = 0; i < arr.length; i++) {
     sum5 += arr[i];
   }
 }
-document.write("sum of even numbers is : " + sumEven);
-document.write("sum of 5 numbers is : " + sum5);
 
 let obj = {
   name: "Mustafa",
@@ -33,8 +31,15 @@ let obj = {
   phone: "0945866740",
   email: "mustafa.alsatuf.97@gmail.com",
 };
-document.write(obj);
-document.write("Name is : " + obj.name);
-document.write("Age is : " + obj.age);
-document.write("Phone is : " + obj.phone);
-document.write("Email is : " + obj.email);
+
+let c = `<h1>Part 1</h1>
+<p>sum of even numbers is : ${sumEven}</p>
+<p>sum of 5 numbers is : ${sum5}</p>
+<h1>Part 2</h1>
+<p>Print Object : ${obj}</p>
+<p>Print Obj Name : ${obj.name}</p>
+<p>Print Obj Age : ${obj.age}</p>
+<p>Print Obj phone : ${obj.phone}</p>
+<p>Print Obj Email : ${obj.email}</p>
+`;
+document.write(c);
